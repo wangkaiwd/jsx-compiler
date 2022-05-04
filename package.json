@@ -1,0 +1,29 @@
+{
+  "name": "jsx-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangkaiwd/jsx-compiler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangkaiwd/jsx-compiler/issues"
+  },
+  "homepage": "https://github.com/wangkaiwd/jsx-compiler#readme",
+  "dependencies": {
+    "@babel/core": "^7.17.10"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
+    "@types/babel__core": "^7.1.19",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
