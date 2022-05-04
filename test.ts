@@ -1,4 +1,4 @@
-const babel = require('@babel/core');
+import babel from '@babel/core';
 
 const code = `
   const App = () => {
@@ -8,4 +8,4 @@ const code = `
 `;
 const result = babel.transformFileSync(code, { plugins: [['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }]] });
 
-// console.log('result', result);
+console.log('result', result);
