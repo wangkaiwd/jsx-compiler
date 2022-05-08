@@ -1,4 +1,4 @@
-import babel from '@babel/core';
+import * as babel from '@babel/core';
 
 const code = `
   const App = () => {
@@ -6,6 +6,6 @@ const code = `
     return <div className="test" {...obj}>hello jsx</div>
   }
 `;
-const result = babel.transformFileSync(code, { plugins: [['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }]] });
 
-console.log('result', result);
+const result = babel.transformSync(code, { plugins: [['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }]] });
+console.log('result', result?.code);
