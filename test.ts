@@ -10,6 +10,7 @@ const code = `
   }
 `;
 
+// todo: debug , try to find source code of parse jsx syntax
 const result = babel.transformSync(code, { plugins: [['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }]] });
 console.log('result', result);
 // babel plugin:
